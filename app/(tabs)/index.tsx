@@ -1,13 +1,9 @@
-import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>This is the index screen.</Text>
-      <Link href={"/about"} style={styles.link}>
-        Goto about page
-      </Link>
     </View>
   );
 }
