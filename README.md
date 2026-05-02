@@ -1,6 +1,6 @@
 # Welcome to EasyMath 👋
 
-This is the official repository for **MathKids**, a mobile application built with [Expo](https://expo.dev) designed to help children aged **4 – 10** master mathematical concepts through interactive play.
+This is the official repository for **EasyMath**, a mobile application built with [Expo](https://expo.dev) designed to help children aged **4 – 10** master mathematical concepts through interactive play.
 
 ## About the Project
 
