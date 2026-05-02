@@ -13,7 +13,9 @@ export default function TabLayout() {
         options={{
           headerTitle: "Home",
           tabBarLabel: "Home",
-          tabBarIcon: () => <Ionicons name="home" size={20} />,
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons name={focused ? "home" : "home-outline"} size={20} />
+          ),
         }}
       />
       <Tabs.Screen
@@ -21,7 +23,14 @@ export default function TabLayout() {
         options={{
           headerTitle: "About",
           tabBarLabel: "About",
-          tabBarIcon: () => <Ionicons name="information-circle" size={20} />,
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons
+              name={
+                focused ? "information-circle" : "information-circle-outline"
+              }
+              size={20}
+            />
+          ),
         }}
       />
       <Tabs.Screen
@@ -29,7 +38,12 @@ export default function TabLayout() {
         options={{
           headerTitle: "Profile",
           tabBarLabel: "Profile",
-          tabBarIcon: () => <Ionicons name="accessibility" size={20} />,
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons
+              name={focused ? "accessibility" : "accessibility-outline"}
+              size={20}
+            />
+          ),
         }}
       />
     </Tabs>
