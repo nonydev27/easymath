@@ -18,7 +18,18 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
+        name="lessons"
+        options={{
+          headerTitle: "Lessons",
+          tabBarLabel: "Lessons",
+          tabBarIcon: ({ focused, color }) => (
+            <Ionicons name={focused ? "book" : "book-outline"} size={20} />
+          ),
+        }}
+      />
+      {/* <Tabs.Screen
         name="about"
         options={{
           headerTitle: "About",
@@ -32,7 +43,7 @@ export default function TabLayout() {
             />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
         name="profile"
         options={{
