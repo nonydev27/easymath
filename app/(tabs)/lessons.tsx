@@ -1,9 +1,17 @@
+import LottieView from "lottie-react-native";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Lessons() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>This is the lessons screen.</Text>
+      <LottieView
+        source={require("../../assets/maintenance.json")}
+        style={styles.animation}
+        autoPlay
+        loop
+      />
+      <Text style={styles.text}>Page is currently under maintenance.</Text>
     </View>
   );
 }
@@ -13,11 +21,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "orange",
+    backgroundColor: "",
   },
-
+  animation: {
+    width: 300,
+    height: 300,
+  },
   text: {
-    color: "white",
+    color: "orange",
     fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 20,
   },
 });
